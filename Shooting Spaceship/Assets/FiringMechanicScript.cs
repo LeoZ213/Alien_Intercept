@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthBarScript : MonoBehaviour
+public class FiringMechanicScript : MonoBehaviour
 {
-    public float hp = 100f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +13,6 @@ public class HealthBarScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-    public float getHeatlh()
-    {
-        return hp;
+        
     }
 }

@@ -6,26 +6,27 @@ public class AlienCollision : MonoBehaviour
 {
     public bool damaged = false;
     public HealthBarScript healthBarScript;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (healthBarScript.getHeatlh() == 0)
+        //Checks the hp and destroys object if hp is 0
+        if (healthBarScript.hp == 0)
         {
             Destroy(gameObject);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    //OnTriggerEnter2D checks for objects that act as triggers collides
+    private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
-        if(gameObject.gameObject.tag == "Projectile")
+        //Checks if the collision object has a tag "Projectile"
+        if(collision.gameObject.tag == "Projectile")
         {
-            damaged = true;
-            //TODO Code the healthbar so it changes when it gets hit
+            Debug.Log("Alien spaceship got hit");
+            //Updates the Sprite and the hp
+            healthBarScript.updateSprite();
+            healthBarScript.hp -= 50;
         }
     }
 

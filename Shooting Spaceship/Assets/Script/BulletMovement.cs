@@ -7,17 +7,8 @@ public class BulletMovement : MonoBehaviour
 
     public float moveSpeed = 6.0f;
     public Rigidbody2D rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float damage = 50;
+ 
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
         //Checks if it's the enemy and destroys the projectile (itself)
