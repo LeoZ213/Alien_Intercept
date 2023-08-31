@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public Rigidbody2D rb;
-    public float moveSpeed = 5.0f;
+    public float moveSpeed = 4.5f;
     public InputAction playerControls;
 
     Vector2 moveDirection = Vector2.zero;
