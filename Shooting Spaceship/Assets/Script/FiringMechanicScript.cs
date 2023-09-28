@@ -6,7 +6,7 @@ using UnityEngine;
 public class FiringMechanicScript : MonoBehaviour
 {
     public BulletMovement bullet;
-    public float fireRate = 0.5f;
+    public float fireRate = 0.3f;
     private float nextFireTime = 0.0f;
 
     // Update is called once per frame

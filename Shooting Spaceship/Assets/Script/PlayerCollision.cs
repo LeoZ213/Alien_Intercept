@@ -14,6 +14,7 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("We hit an alien spaceship!");
             Controller.enabled = false;
             Controller.rb.Sleep();
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
