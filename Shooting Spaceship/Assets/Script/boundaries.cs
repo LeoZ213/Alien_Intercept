@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boundaries : MonoBehaviour
+public class Boundaries : MonoBehaviour
 {
     public Camera MainCamera;
     private Vector2 screenBounds;

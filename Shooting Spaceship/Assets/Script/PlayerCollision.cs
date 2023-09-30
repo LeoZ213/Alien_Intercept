@@ -9,12 +9,12 @@ public class PlayerCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("We hit an object!");
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy") //Checks if the object is an Enemy
         {
             Debug.Log("We hit an alien spaceship!");
-            Controller.enabled = false;
-            Controller.rb.Sleep();
-            FindObjectOfType<GameManager>().EndGame();
+            Controller.enabled = false; //Disables player movement
+            Controller.rb.Sleep(); //Disables player rigidbody
+            FindObjectOfType<GameManager>().EndGame(); //Ends the game
         }
     }
 }
