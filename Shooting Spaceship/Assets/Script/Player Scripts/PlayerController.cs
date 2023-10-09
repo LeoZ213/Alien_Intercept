@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         playerControls.Disable(); }
 
+    //Moves the player based on the inputs
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);

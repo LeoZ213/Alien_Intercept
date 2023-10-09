@@ -11,7 +11,6 @@ public class BulletMovement : MonoBehaviour
 
     private void Update()
     {
-
         Destroy(gameObject, 2.0f);
     }
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)

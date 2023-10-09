@@ -8,29 +8,28 @@ public class SpawnAliens : MonoBehaviour
     public int maxSpawnCount = 5;
     public Collider2D colliderObject;
     private float colliderWidth;
-    private float colliderHeight;
 
     // Start is called before the first frame update
     void Start()
     {
         colliderWidth = colliderObject.GetComponent<Collider2D>().bounds.size.x;
-        colliderHeight = colliderObject.GetComponent<Collider2D>().bounds.size.y;
-        Debug.Log(colliderWidth);
-        Debug.Log("spawn position" + referenceObject.transform.position.x);
         SpawnAlienSpaceship(referenceObject, spawnRotation);
     }
     void SpawnAlienSpaceship(GameObject alien, Quaternion rotation)
     {
+        //Keeps track of the spawn count and the initial position
         int spawnCount = 0;
         Vector2 spawnPosition = referenceObject.transform.position;
 
+        //Checks if the gameObject exists
         if (referenceObject != null)
         {
             while (spawnCount < maxSpawnCount)
             {
                 spawnPosition.x += colliderWidth + 0.25f;
-                Debug.Log("NEW SPAWN POSITION" + spawnPosition.x);
+                Debug.Log("Colldier width:" + colliderWidth);
                 GameObject alienInstance = Instantiate(referenceObject, spawnPosition, rotation);
+                Debug.Log(spawnPosition);
                 spawnCount++;
             }
         }
