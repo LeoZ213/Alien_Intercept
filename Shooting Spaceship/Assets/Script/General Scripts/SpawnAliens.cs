@@ -27,9 +27,7 @@ public class SpawnAliens : MonoBehaviour
             while (spawnCount < maxSpawnCount)
             {
                 spawnPosition.x += colliderWidth + 0.25f;
-                Debug.Log("Colldier width:" + colliderWidth);
                 GameObject alienInstance = Instantiate(referenceObject, spawnPosition, rotation);
-                Debug.Log(spawnPosition);
                 spawnCount++;
             }
         }

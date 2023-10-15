@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float moveSpeed = 4.5f;
     public InputAction playerControls;
+    public bool isSlowed = false;
 
     Vector2 moveDirection = Vector2.zero;
 
@@ -29,8 +30,22 @@ public class PlayerController : MonoBehaviour
     //Moves the player based on the inputs
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        if (isSlowed)
+        {
+            rb.velocity = new Vector2(moveDirection.x * moveSpeed/2, moveDirection.y * moveSpeed/2);
+        }
+        else
+        {
+            rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        }
     }
+    public void setSlowed(bool value)
+    {
+        isSlowed = value;
+    }
+    
+    
+
 }
 
 
