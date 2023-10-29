@@ -12,6 +12,6 @@ public class AlienBulletMovement : MonoBehaviour, IPooledObject
     public void OnObjectSpawn()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, -3);
+        rb.velocity = new Vector2(0, velocity);
     }
 }
