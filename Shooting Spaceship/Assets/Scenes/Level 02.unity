@@ -411,7 +411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7343522805029321809, guid: 476501c736e322d44853f10d4428f25a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -526,63 +526,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2227548798003516206
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4876208331389927068, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5355710702448076642, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
-      propertyPath: m_Name
-      value: Green Splash
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
 --- !u!1001 &2486320505534175998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -736,7 +679,6 @@ SceneRoots:
   - {fileID: 2486320505534175998}
   - {fileID: 2099170782}
   - {fileID: 5940324300843288738}
-  - {fileID: 2227548798003516206}
   - {fileID: 1436752588}
   - {fileID: 2083361997}
   - {fileID: 2026118502}
