@@ -6,11 +6,13 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerController Controller;
     public float slowDelay = 2.0f;
+    public GameObject shield;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("We hit something");
-        if ((collision.gameObject.tag == "Enemy") || (collision.gameObject.tag == "alien_bullet")) //Checks if the object is an Enemy
+        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("alien_bullet"))
+    && !shield.activeSelf)
+        //Checks if the object is an Enemy, enemy's bullets, and if the shield is down
         {
             Controller.enabled = false; //Disables player movement
             Controller.rb.Sleep(); //Disables player rigidbody
