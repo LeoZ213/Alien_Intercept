@@ -18,7 +18,7 @@ public class PlayerCollision : MonoBehaviour
             Controller.rb.Sleep(); //Disables player rigidbody
             FindObjectOfType<GameManager>().EndGame(); //Ends the game
         }
-        if (collision.gameObject.tag == "Negative_Effects")
+        if (collision.gameObject.CompareTag("Negative_Effects"))
         {
             Debug.Log("Set slowness");
             StartCoroutine(DelayedSlow(2.0f));
