@@ -4,6 +4,7 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     public ObjectPooler objectPooler;
+    public Collider2D player;
     private void Start()
     {
         objectPooler = FindObjectOfType<ObjectPooler>();
@@ -26,7 +27,10 @@ public class Shield : MonoBehaviour
 
             if (collision.gameObject.name == "Alien bullet" || collision.gameObject.name == "Alien bullet(Clone)")
             {
+                // TODO NEED TO FIX PLAYER HORIZONTALLY MOVING COLLIDING WITH SHIELD BUT STILL GAME OVER
+                player.enabled = false;
                 objectPooler.poolDictionary["NormalBullet"].Enqueue(collision.gameObject);
+                player.enabled = true;
             }
         }
     }
