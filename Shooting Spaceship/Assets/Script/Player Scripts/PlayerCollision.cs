@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
@@ -7,6 +8,8 @@ public class PlayerCollision : MonoBehaviour
     public PlayerController Controller;
     public float slowDelay = 2.0f;
     public GameObject shield;
+    public GameObject explosion;
+    public FiringMechanicScript fireMech;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +19,9 @@ public class PlayerCollision : MonoBehaviour
         {
             Controller.enabled = false; //Disables player movement
             Controller.rb.Sleep(); //Disables player rigidbody
-            FindObjectOfType<GameManager>().EndGame(); //Ends the game
+            fireMech.enabled = false; //Disables firing
+            //Starts the explosion and restart delay
+            StartCoroutine(Explosion(2f));
         }
         if (collision.gameObject.CompareTag("Negative_Effects"))
         {
@@ -32,5 +37,12 @@ public class PlayerCollision : MonoBehaviour
         
         Controller.setSlowed(false);
         Debug.Log("Returned to normal speed");
+    }
+
+    private IEnumerator Explosion(float delay)
+    {
+        gameObject.transform.Find("Explosion").gameObject.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        FindObjectOfType<GameManager>().EndGame();
     }
 }
