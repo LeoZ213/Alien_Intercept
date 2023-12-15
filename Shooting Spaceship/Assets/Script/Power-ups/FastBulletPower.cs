@@ -11,6 +11,8 @@ public class FastBulletPower : MonoBehaviour
     {
         //Sets a initial downward velocity
         rb.velocity = new Vector2(0, -1);
+
+        fireMech = FindObjectOfType<FiringMechanicScript>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,7 +28,7 @@ public class FastBulletPower : MonoBehaviour
         //Takes account the original fireRate 
         float originalFireRate = fireMech.fireRate;
 
-        //Set the new firerate 
+        //Sets the new firerate 
         fireMech.fireRate = fireRate;
 
         //Disables the renderer component to make the powerup invisible while still being able to run the rest of the code
@@ -36,7 +38,7 @@ public class FastBulletPower : MonoBehaviour
         yield return new WaitForSeconds(time);
         fireMech.fireRate = originalFireRate;
 
-        //Destroys the gameobject
+        //Destroys the powerup bubble
         Destroy(gameObject);
     }
 }
