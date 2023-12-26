@@ -6,14 +6,16 @@ public class GameManager : MonoBehaviour
 {
     bool hasGameEnded = false;
     float restartDelay = 1f;
+    private bool hasInvokedToLevels = false;
 
     //Continously checks if the player kills all the Enemies and switches the scene to the Levels Menu
     private void Update()
     {
         int numberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        if (numberOfEnemies <= 0)
+        if (numberOfEnemies <= 0 && !hasInvokedToLevels)
         {
             Invoke(nameof(ToLevels), 1.0f);
+            hasInvokedToLevels = true;
         }
     }
 
@@ -37,6 +39,9 @@ public class GameManager : MonoBehaviour
     //Loads the Levels Menu
     private void ToLevels()
     {
+        LevelManager.UnlockNextLevel();
+        Debug.Log("UNLOCKED NEXT LEVEL");
+        Debug.Log(LevelManager.highestLevelReached);
         SceneManager.LoadScene(1);
     }
 }

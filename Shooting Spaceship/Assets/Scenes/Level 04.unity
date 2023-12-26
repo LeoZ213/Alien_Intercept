@@ -135,7 +135,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Squirtward
       objectReference: {fileID: 0}
-    - target: {fileID: 8555019522235972962, guid: 9ec8fe582f34f9e4ba4b918170edc834, type: 3}
     - target: {fileID: 4445783946579095677, guid: 6d1935147fe26d646acece30c6bb46ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2078283
