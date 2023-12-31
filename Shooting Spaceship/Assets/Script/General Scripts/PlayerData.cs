@@ -2,9 +2,10 @@ using UnityEngine;
 
 public static class PlayerData
 {
-    static void Save()
+    public static void Save()
     {
         PlayerPrefs.SetInt("highestLevelReached", LevelManager.highestLevelReached);
+        PlayerPrefs.Save();
     }
 
     public static void Load()
