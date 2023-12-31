@@ -10,6 +10,7 @@ public class PlayerCollision : MonoBehaviour
 
     public PlayerController Controller;
     public FiringMechanicScript fireMech;
+    public GameplayAudio gameplayAudio;
 
     public float slowDelay = 2.0f;
     public bool hasRevival = false;
@@ -59,6 +60,7 @@ public class PlayerCollision : MonoBehaviour
     //Used when the player gets hit and the explosion effects shows
     private IEnumerator Explosion(float delay)
     {
+        gameplayAudio.PlayExplosionSound();
         gameObject.transform.Find("Explosion").gameObject.SetActive(true);
         yield return new WaitForSeconds(delay);
         FindObjectOfType<GameManager>().EndGame();

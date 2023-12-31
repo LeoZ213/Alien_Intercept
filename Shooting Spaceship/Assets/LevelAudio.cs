@@ -9,6 +9,7 @@ public class LevelAudio : MonoBehaviour
     [Header("------------ Audio Clips ------------")]
     public AudioClip background;
 
+    //Starts playing the background music
     private void Start()
     {
         musicSource.clip = background;

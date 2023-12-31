@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class FiringMechanicScript : MonoBehaviour
 {
+    public GameplayAudio gameplayAudio;
+
     public BulletMovement bullet;
     public float fireRate = 0.25f;
     private float nextFireTime = 0.0f;
@@ -15,6 +17,7 @@ public class FiringMechanicScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && Time.time >= nextFireTime)
         {
             nextFireTime = Time.time + fireRate; //Updates the next allowed firing time
+            gameplayAudio.PlayShootingSound();
             BulletMovement clone = Instantiate(bullet,transform.position, transform.rotation);
         }
     }
