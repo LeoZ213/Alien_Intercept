@@ -18,12 +18,11 @@ public class BulletMovement : MonoBehaviour
         //Checks if it's the enemy and destroys the projectile (itself)
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Enemy hit!");
             Destroy(gameObject);
         }
     }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(0, moveSpeed); //moves in the y direction
+        rb.velocity = new Vector2(0, moveSpeed ); //moves in the y direction
     }
 }

@@ -23,7 +23,6 @@ public class AlienCollision : MonoBehaviour
         //Checks if the collision object has a tag "Projectile"
         if(collision.gameObject.tag == "Projectile")
         {
-            Debug.Log("Alien spaceship got hit");
             //Updates the Sprite and the hp
             healthBarScript.updateSprite();
             healthBarScript.hp -= 50;
