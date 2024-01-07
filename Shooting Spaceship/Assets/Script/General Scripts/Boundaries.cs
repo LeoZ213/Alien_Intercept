@@ -3,7 +3,7 @@ using UnityEngine;
 public class Boundaries : MonoBehaviour
 {
     public Camera MainCamera;
-    private Vector2 screenBounds;
+    public Vector2 screenBounds { get; private set; }
     private float objectWidth;
     private float objectHeight;
 
