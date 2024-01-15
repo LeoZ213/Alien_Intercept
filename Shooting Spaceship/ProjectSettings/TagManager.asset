@@ -12,7 +12,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -47,4 +47,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Laser
+    uniqueID: 819791985
+    locked: 0
+  - name: Boss
+    uniqueID: 2185638115
     locked: 0

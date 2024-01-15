@@ -13,9 +13,9 @@ public class SpawnAliens : MonoBehaviour
     void Start()
     {
         colliderWidth = colliderObject.GetComponent<Collider2D>().bounds.size.x;
-        SpawnAlienSpaceship(referenceObject, spawnRotation);
+        SpawnAlienSpaceship(referenceObject, spawnRotation, maxSpawnCount);
     }
-    void SpawnAlienSpaceship(GameObject alien, Quaternion rotation)
+    public void SpawnAlienSpaceship(GameObject alien, Quaternion rotation, int maxSpawnCount)
     {
         //Keeps track of the spawn count and the initial position
         int spawnCount = 0;

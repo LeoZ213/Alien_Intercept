@@ -36,8 +36,19 @@ public class AlienMovement : MonoBehaviour
         Vector2 screenPosition = camera1.WorldToScreenPoint(rb.position);
         if ((screenPosition.x < screenBorder) || (screenPosition.x > camera1.pixelWidth - screenBorder))
         {
-            // Reverse the direction
+            //Makes the alien move the other way by 0.01 when it touches the border
+            if (rb.position.x < 0)
+            {
+                rb.position = new Vector2(rb.position.x + 0.01f, rb.position.y);
+            }
+            else
+            {
+                rb.position = new Vector2(rb.position.x - 0.01f, rb.position.y);
+            }
+
+            //Reverses the direction
             rb.velocity = new Vector2(-rb.velocity.x, 0);
+
         }
     }
 }

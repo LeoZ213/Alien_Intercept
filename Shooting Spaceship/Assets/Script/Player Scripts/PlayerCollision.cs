@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEngine.Animations;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
