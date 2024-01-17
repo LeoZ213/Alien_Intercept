@@ -7,7 +7,7 @@
 - [Used Resources](#Used_Resources)
   
 ## Introduction
-Alien intercept
+**Alien intercept**
 
 Alien Intercept is a dynamic space-invaders-inspired game featuring two custom enemies, a formidable boss, and a total of five thrilling levels. With strategically placed power-ups, players can enhance their abilities for an intense cosmic showdown against the alien threat
 
