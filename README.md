@@ -9,6 +9,8 @@
 ## Introduction
 Alien intercept
 
+Alien Intercept is a dynamic space-invaders-inspired game featuring two custom enemies, a formidable boss, and a total of five thrilling levels. With strategically placed power-ups, players can enhance their abilities for an intense cosmic showdown against the alien threat
+
 ![Levels Menu](https://github.com/LeoZ213/Alien_Intercept/assets/113804442/2ae47bf3-fdaf-4eae-a131-5ef0bc55e785)
 ![Level 02](https://github.com/LeoZ213/Alien_Intercept/assets/113804442/3e5c38c6-03ba-42be-af97-80a826b554db)
 
