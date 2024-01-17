@@ -23,4 +23,12 @@ Alien Intercept is a dynamic space-invaders-inspired game featuring two custom e
 - None (Yet)
 
 ## Used Resources
-- [Brackeys]
+- [Brackey's Mega Pack](https://github.com/OpenHogwarts/hogwarts/blob/master/ProjectSettings/ProjectVersion.txt) (Only for the Small Alien Spaceship)
+- [Josefpres](https://freesound.org/people/josefpres/sounds/717229/) (Level's Menu Background Track)
+- [TiagoThanos](https://freesound.org/people/TiagoThanos/sounds/583100/) (Background Track for every level)
+- [JalaStram](https://freesound.org/people/jalastram/sounds/317751/) (Player Death Sound)
+- [MidJourney AI](https://www.midjourney.com/) (Generated Player Sprite)
+- [Osama Deep](https://assetstore.unity.com/publishers/1778) (Player Explosion Animation)
+- [Can't Find the User](Used for the laser sound)               **NOTE** I found the sound track on freesound.org and I hope someone can recognize the sound and inform me about the author's name
+
+**The rest of the sprites/animations were all created by myself**
