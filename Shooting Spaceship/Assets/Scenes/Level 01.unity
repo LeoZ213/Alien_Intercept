@@ -398,6 +398,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 80986107392121232, guid: ca6e1430ab4e18a43832dd4a98e095ea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2403343541200412766, guid: ca6e1430ab4e18a43832dd4a98e095ea, type: 3}
       propertyPath: m_Name
       value: AlienSpaceship
@@ -558,6 +562,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5101066067503119260, guid: e4d1a2e7b0c7c2942b9f81c320f893ae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3068234
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101066067503119260, guid: e4d1a2e7b0c7c2942b9f81c320f893ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.020114243
       objectReference: {fileID: 0}
@@ -597,6 +605,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5101066067503119260, guid: e4d1a2e7b0c7c2942b9f81c320f893ae, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5492294559531628952, guid: e4d1a2e7b0c7c2942b9f81c320f893ae, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -629,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 2985478074515109389, guid: eca27850431241a4b91d9cf7f88bf37b, type: 3}
       propertyPath: m_Name
       value: GamePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318481307793219339, guid: eca27850431241a4b91d9cf7f88bf37b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.550064
       objectReference: {fileID: 0}
     - target: {fileID: 8347299499909256038, guid: eca27850431241a4b91d9cf7f88bf37b, type: 3}
       propertyPath: m_Pivot.x

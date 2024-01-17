@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class AlienMovement : MonoBehaviour
 {
+    //Pixel width distance from the border
     [SerializeField]
     private float screenBorder = 30;
 
@@ -34,21 +35,10 @@ public class AlienMovement : MonoBehaviour
     private void reverseVelocity()
     {
         Vector2 screenPosition = camera1.WorldToScreenPoint(rb.position);
-        if ((screenPosition.x < screenBorder) || (screenPosition.x > camera1.pixelWidth - screenBorder))
+        if ((screenPosition.x < screenBorder && rb.velocity.x < 0) ||
+            (screenPosition.x > camera1.pixelWidth - screenBorder && rb.velocity.x > 0))
         {
-            //Makes the alien move the other way by 0.01 when it touches the border
-            if (rb.position.x < 0)
-            {
-                rb.position = new Vector2(rb.position.x + 0.01f, rb.position.y);
-            }
-            else
-            {
-                rb.position = new Vector2(rb.position.x - 0.01f, rb.position.y);
-            }
-
-            //Reverses the direction
             rb.velocity = new Vector2(-rb.velocity.x, 0);
-
         }
     }
 }
