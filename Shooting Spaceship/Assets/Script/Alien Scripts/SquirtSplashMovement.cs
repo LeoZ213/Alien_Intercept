@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SquirtSplashMovement : MonoBehaviour, IPooledObject
@@ -8,6 +6,12 @@ public class SquirtSplashMovement : MonoBehaviour, IPooledObject
     public float velocity;
     public GameObject prefab;
 
+    ObjectPooler objectPooler;
+
+    void Start()
+    {
+        objectPooler = ObjectPooler.Instance;
+    }
     public void OnObjectSpawn()
     {
         //Gets a random float from the range of 0.5f to 2f for the SplashArea call
@@ -24,6 +28,6 @@ public class SquirtSplashMovement : MonoBehaviour, IPooledObject
     //Creates a green splash to slow player down at the position of the projectile
     public void SplashArea()
     {
-        GameObject greenSplash = Instantiate(prefab,new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
+        objectPooler.SpawnFromPool("GreenSplash", new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
     }
 }

@@ -1033,6 +1033,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7773461440201328348, guid: 90d644ab1cd86c24a9ab7832b213f766, type: 3}
+      propertyPath: pools.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773461440201328348, guid: 90d644ab1cd86c24a9ab7832b213f766, type: 3}
+      propertyPath: pools.Array.data[2].tag
+      value: GreenSplash
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773461440201328348, guid: 90d644ab1cd86c24a9ab7832b213f766, type: 3}
+      propertyPath: pools.Array.data[2].size
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773461440201328348, guid: 90d644ab1cd86c24a9ab7832b213f766, type: 3}
+      propertyPath: pools.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 5355710702448076642, guid: 779f5a7c8646d2144983d6151e461082, type: 3}
     - target: {fileID: 8050294865789329813, guid: 90d644ab1cd86c24a9ab7832b213f766, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
