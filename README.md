@@ -29,6 +29,7 @@ Alien Intercept is a dynamic space-invaders-inspired game featuring two custom e
 - [JalaStram](https://freesound.org/people/jalastram/sounds/317751/) (Player Death Sound)
 - [MidJourney AI](https://www.midjourney.com/) (Generated Player Sprite)
 - [Osama Deep](https://assetstore.unity.com/publishers/1778) (Player Explosion Animation)
+- [Kenney](https://www.kenney.nl/assets/ui-pack) (UI for the pause menu)
 - [Can't Find the User](Used for the laser sound)               **NOTE** I found the sound track on freesound.org and I hope someone can recognize the sound and inform me about the author's name
 
 **The rest of the sprites/animations were all created by myself**
