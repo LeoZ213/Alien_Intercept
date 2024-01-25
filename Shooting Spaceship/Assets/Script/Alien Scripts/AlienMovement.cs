@@ -4,7 +4,7 @@ public class AlienMovement : MonoBehaviour
 {
     //Pixel width distance from the border
     [SerializeField]
-    private float screenBorder = 30;
+    private float screenBorder = 50;
 
     public float moveSpeed = 1.0f;
     public Rigidbody2D rb;
@@ -23,20 +23,10 @@ public class AlienMovement : MonoBehaviour
         // Set the velocity based on variability
         rb.velocity = new Vector2(variability, 0) * moveSpeed;
     }
-    private void FixedUpdate()
-    {
-        reverseVelocity();
-    }
 
-    /*
-     * Checks if the Alien is near the border
-     * Changes the direction to the opposite way if the Alien hits the border
-     */
-    private void reverseVelocity()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 screenPosition = camera1.WorldToScreenPoint(rb.position);
-        if ((screenPosition.x < screenBorder && rb.velocity.x < 0) ||
-            (screenPosition.x > camera1.pixelWidth - screenBorder && rb.velocity.x > 0))
+        if (collision.tag == "xBorder")
         {
             rb.velocity = new Vector2(-rb.velocity.x, 0);
         }

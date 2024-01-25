@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - alien_bullet
   - Negative_Effects
+  - xBorder
   layers:
   - Default
   - TransparentFX
