@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class AlienMovement : MonoBehaviour
 {
-    //Pixel width distance from the border
-    [SerializeField]
-    private float screenBorder = 50;
 
     public float moveSpeed = 1.0f;
     public Rigidbody2D rb;

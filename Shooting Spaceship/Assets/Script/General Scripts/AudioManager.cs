@@ -19,6 +19,6 @@ public class AudioManager : MonoBehaviour
     //Changes the volume of the music based on the slider value
     public void ChangeVolume()
     {
-        musicSource.volume = slider.value; 
+        musicSource.volume = slider.value;
     }
 }

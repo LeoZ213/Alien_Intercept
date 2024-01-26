@@ -18,6 +18,9 @@ public class GameplayAudio : MonoBehaviour
 
     void Start()
     {
+        musicSource.volume = PlayerPrefs.GetFloat("Volume val");
+        SFXSource.volume = PlayerPrefs.GetFloat("Volume val");
+
         musicSource.clip = background;
         musicSource.loop = true;
         musicSource.Play();

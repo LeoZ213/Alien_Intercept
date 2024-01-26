@@ -12,6 +12,8 @@ public class LevelAudio : MonoBehaviour
     //Starts playing the background music
     private void Start()
     {
+        musicSource.volume = PlayerPrefs.GetFloat("Volume val");
+
         musicSource.clip = background;
         musicSource.loop = true;
         musicSource.Play();
